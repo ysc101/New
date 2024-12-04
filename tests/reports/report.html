@@ -439,10 +439,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 27-Nov-2024 at 18:00:46 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 03-Dec-2024 at 11:12:12 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>2 tests ran in 15.21 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>0 tests ran in 1.45 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">2 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -453,21 +453,21 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_login.py::test_login</td>
-          <td class="col-duration">9.58</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">tests/test_login.py::test_login::setup</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
+            <div class="log">@pytest.fixture<br/>    def driver():<br/>&gt;       driver = get_driver()<br/><br/>test_login.py:11: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>..\utils\driver_setup.py:8: in get_driver<br/>    driver = webdriver.Chrome(service=service)<br/>..\..\ZPFMS\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py:45: in __init__<br/>    super().__init__(<br/>..\..\ZPFMS\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py:51: in __init__<br/>    self.service.path = DriverFinder.get_path(self.service, options)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>service = &lt;selenium.webdriver.chrome.service.Service object at 0x000001880275AA80&gt;<br/>options = &lt;selenium.webdriver.chrome.options.Options object at 0x00000188027594F0&gt;<br/><br/>    @staticmethod<br/>    def get_path(service: Service, options: BaseOptions) -&gt; str:<br/>        path = service.path<br/>        try:<br/>            path = SeleniumManager().driver_location(options) if path is None else path<br/>        except Exception as err:<br/>            msg = f&quot;Unable to obtain driver for {options.capabilities[&#x27;browserName&#x27;]} using Selenium Manager.&quot;<br/>            raise NoSuchDriverException(msg) from err<br/>    <br/>        if path is None or not Path(path).is_file():<br/>&gt;           raise NoSuchDriverException(f&quot;Unable to locate or obtain driver for {options.capabilities[&#x27;browserName&#x27;]}&quot;)<br/><span class="error">E           selenium.common.exceptions.NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location</span><br/><br/>..\..\ZPFMS\.venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py:44: NoSuchDriverException<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_login.py::test_vendor</td>
-          <td class="col-duration">1.20</td>
+          <td class="col-result">Error</td>
+          <td class="col-name">tests/test_login.py::test_vendor::setup</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log">@pytest.fixture<br/>    def driver():<br/>&gt;       driver = get_driver()<br/><br/>test_login.py:11: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>..\utils\driver_setup.py:8: in get_driver<br/>    driver = webdriver.Chrome(service=service)<br/>..\..\ZPFMS\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py:45: in __init__<br/>    super().__init__(<br/>..\..\ZPFMS\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py:51: in __init__<br/>    self.service.path = DriverFinder.get_path(self.service, options)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>service = &lt;selenium.webdriver.chrome.service.Service object at 0x00000188027F0650&gt;<br/>options = &lt;selenium.webdriver.chrome.options.Options object at 0x00000188027F0320&gt;<br/><br/>    @staticmethod<br/>    def get_path(service: Service, options: BaseOptions) -&gt; str:<br/>        path = service.path<br/>        try:<br/>            path = SeleniumManager().driver_location(options) if path is None else path<br/>        except Exception as err:<br/>            msg = f&quot;Unable to obtain driver for {options.capabilities[&#x27;browserName&#x27;]} using Selenium Manager.&quot;<br/>            raise NoSuchDriverException(msg) from err<br/>    <br/>        if path is None or not Path(path).is_file():<br/>&gt;           raise NoSuchDriverException(f&quot;Unable to locate or obtain driver for {options.capabilities[&#x27;browserName&#x27;]}&quot;)<br/><span class="error">E           selenium.common.exceptions.NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location</span><br/><br/>..\..\ZPFMS\.venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py:44: NoSuchDriverException<br/></div></td></tr></tbody></table></body></html>
