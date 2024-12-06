@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-12-06T09:41:28.465648" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\Yogesh.c\LPRS\tests\test_login.py">
+<test id="s1-t1" name="test_login">
+<kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
+<msg time="2024-12-06T09:41:28.586281" level="FAIL">NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<status status="FAIL" start="2024-12-06T09:41:28.482146" elapsed="0.105165">NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
+<status status="PASS" start="2024-12-06T09:41:28.587311" elapsed="0.000963"/>
+</kw>
+<status status="FAIL" start="2024-12-06T09:41:28.479062" elapsed="0.109212">Setup failed:
+NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" start="2024-12-06T09:41:28.467164" elapsed="0.122082"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Login">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
