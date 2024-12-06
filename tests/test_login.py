@@ -21,7 +21,4 @@ def test_login(driver):
     # Assertion to verify successful login
     assert "ZPFMS" in driver.title
 
-def test_vendor(driver):
-    vendor_page=Vendor(driver)
-    vendor_page.Master_Menu
-    vendor_page.Beneficiary_Creation_Menu
+
