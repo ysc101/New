@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-12-06T09:41:28.465648" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-12-06T15:25:55.064622" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Login" source="C:\Users\Yogesh.c\LPRS\tests\test_login.py">
 <test id="s1-t1" name="test_login">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<msg time="2024-12-06T09:41:28.586281" level="FAIL">NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-</msg>
-<status status="FAIL" start="2024-12-06T09:41:28.482146" elapsed="0.105165">NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-</status>
+<msg time="2024-12-06T15:25:55.084644" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2024-12-06T15:25:55.494841" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-12-06T15:25:55.741086" level="INFO">About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip</msg>
+<msg time="2024-12-06T15:25:55.911689" level="INFO">Driver downloading response is 200</msg>
+<msg time="2024-12-06T15:25:56.467518" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-12-06T15:25:56.911512" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-12-06T15:25:57.236895" level="INFO">Driver has been saved in cache [C:\Users\Yogesh.c\.wdm\drivers\chromedriver\win64\114.0.5735.90]</msg>
+<msg time="2024-12-06T15:25:57.566030" level="FAIL">AttributeError: 'str' object has no attribute 'capabilities'</msg>
+<status status="FAIL" start="2024-12-06T15:25:55.083649" elapsed="2.484430">AttributeError: 'str' object has no attribute 'capabilities'</status>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2024-12-06T09:41:28.587311" elapsed="0.000963"/>
+<status status="PASS" start="2024-12-06T15:25:57.568079" elapsed="0.000943"/>
 </kw>
-<status status="FAIL" start="2024-12-06T09:41:28.479062" elapsed="0.109212">Setup failed:
-NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
-</status>
+<status status="FAIL" start="2024-12-06T15:25:55.080644" elapsed="2.488378">Setup failed:
+AttributeError: 'str' object has no attribute 'capabilities'</status>
 </test>
-<status status="FAIL" start="2024-12-06T09:41:28.467164" elapsed="0.122082"/>
+<status status="FAIL" start="2024-12-06T15:25:55.066614" elapsed="2.503436"/>
 </suite>
 <statistics>
 <total>
